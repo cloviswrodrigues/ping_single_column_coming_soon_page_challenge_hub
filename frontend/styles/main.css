@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  padding-top: 4rem;
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+.wrapper {
+  max-width: 350px;
+  margin: 0 auto;
+}
+
+.img__dashboard {
+  max-width: 100%;
+}
+/*# sourceMappingURL=main.css.map */

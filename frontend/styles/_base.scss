@@ -1,0 +1,24 @@
+$color-blue: hsl(223, 87%, 63%);
+$color-pale-blue: hsl(223, 100%, 88%);
+$color-light-red: hsl(354, 100%, 66%);
+$color-gray: hsl(0, 0%, 59%);
+$color-very-dark-blue: hsl(209, 33%, 12%);
+$color-light: white;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $color-light;
+    padding-top: 4rem;
+    min-width: 100vw;
+    min-height: 100vh;
+}
+
+.wrapper {
+    max-width: 350px;
+    margin: 0 auto;
+}
