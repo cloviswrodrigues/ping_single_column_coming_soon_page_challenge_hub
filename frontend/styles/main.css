@@ -5,19 +5,82 @@
           box-sizing: border-box;
 }
 
+html {
+  font-family: Libre Franklin, sans-serif;
+}
+
 body {
   background-color: white;
-  padding-top: 4rem;
+  padding-top: 2rem;
   min-width: 100vw;
   min-height: 100vh;
 }
 
 .wrapper {
+  position: relative;
   max-width: 350px;
   margin: 0 auto;
 }
 
+.img__logo {
+  display: block;
+  margin: 0 auto;
+}
+
+h2 {
+  letter-spacing: .1rem;
+  font-weight: 300;
+  color: #969696;
+  margin-top: 1.6rem;
+  margin-bottom: .8rem;
+}
+
+h2 span {
+  font-weight: 700;
+  color: #151f29;
+  letter-spacing: initial;
+}
+
+p {
+  font-size: .8rem;
+}
+
+form {
+  margin-top: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+form input {
+  border-radius: 50px;
+  border: 1px solid #969696;
+  padding: .8rem 1.2rem;
+  margin-bottom: 8px;
+}
+
+form button {
+  font-weight: 300;
+  color: white;
+  border-radius: 50px;
+  border: none;
+  padding: .8rem 1.2rem;
+  background-color: #4f7df3;
+  -webkit-box-shadow: 1px 5px 20px #4f7df3;
+          box-shadow: 1px 5px 20px #4f7df3;
+}
+
+h2, p {
+  text-align: center;
+}
+
 .img__dashboard {
+  display: block;
+  margin-top: 2rem;
   max-width: 100%;
 }
 /*# sourceMappingURL=main.css.map */

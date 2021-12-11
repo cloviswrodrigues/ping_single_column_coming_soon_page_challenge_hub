@@ -11,14 +11,19 @@ $color-light: white;
     box-sizing: border-box;
 }
 
+html {
+    font-family: Libre Franklin, sans-serif;
+}
+
 body {
     background-color: $color-light;
-    padding-top: 4rem;
+    padding-top: 2rem;
     min-width: 100vw;
     min-height: 100vh;
 }
 
 .wrapper {
+    position: relative;
     max-width: 350px;
     margin: 0 auto;
 }
