@@ -1,10 +1,10 @@
 .img__logo {
     display: block;
     margin: 0 auto;
+    width: 50px;
 }
 
 h2 {
-    letter-spacing: .1rem;
     font-weight: 300;
     color: $color-gray;
     margin-top: 1.6rem;
@@ -41,6 +41,16 @@ form {
         padding: .8rem 1.2rem;
         background-color: $color-blue;
         box-shadow: 1px 5px 20px $color-blue;
+    }
+}
+
+.footer {
+    height: 56px;
+    position: absolute;
+    bottom: 0;
+
+    &__social {
+        color: $color-blue;
     }
 }
 

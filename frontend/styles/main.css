@@ -19,16 +19,17 @@ body {
 .wrapper {
   position: relative;
   max-width: 350px;
+  min-height: 100vh;
   margin: 0 auto;
 }
 
 .img__logo {
   display: block;
   margin: 0 auto;
+  width: 50px;
 }
 
 h2 {
-  letter-spacing: .1rem;
   font-weight: 300;
   color: #969696;
   margin-top: 1.6rem;
@@ -72,6 +73,16 @@ form button {
   background-color: #4f7df3;
   -webkit-box-shadow: 1px 5px 20px #4f7df3;
           box-shadow: 1px 5px 20px #4f7df3;
+}
+
+.footer {
+  height: 56px;
+  position: absolute;
+  bottom: 0;
+}
+
+.footer__social {
+  color: #4f7df3;
 }
 
 h2, p {
