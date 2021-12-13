@@ -71,18 +71,51 @@ form button {
   border: none;
   padding: .8rem 1.2rem;
   background-color: #4f7df3;
-  -webkit-box-shadow: 1px 5px 20px #4f7df3;
-          box-shadow: 1px 5px 20px #4f7df3;
+  -webkit-box-shadow: 0px 8px 20px -10px #4f7df3;
+          box-shadow: 0px 8px 20px -10px #4f7df3;
 }
 
 .footer {
-  height: 56px;
+  width: 100%;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   position: absolute;
-  bottom: 0;
+  bottom: 40px;
 }
 
 .footer__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
   color: #4f7df3;
+}
+
+.footer__social-icon {
+  margin-right: .6rem;
+  border-radius: 50%;
+  border: 1px solid #c2d3ff;
+  padding: 5px;
+}
+
+.footer__copyright {
+  display: inline-block;
+  width: 100%;
+  font-size: .6rem;
+  color: #969696;
+  text-align: center;
 }
 
 h2, p {
