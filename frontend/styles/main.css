@@ -23,6 +23,11 @@ body {
   margin: 0 auto;
 }
 
+a {
+  all: unset;
+  cursor: pointer;
+}
+
 .img__logo {
   display: block;
   margin: 0 auto;
@@ -62,6 +67,11 @@ form input {
   border: 1px solid #969696;
   padding: .8rem 1.2rem;
   margin-bottom: 8px;
+}
+
+form input:focus {
+  border: 1px solid #4f7df3;
+  outline: 0;
 }
 
 form button {
