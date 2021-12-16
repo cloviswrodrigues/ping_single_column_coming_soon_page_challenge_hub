@@ -124,6 +124,11 @@ form button:hover {
   padding: 5px;
 }
 
+.footer__social-icon:hover {
+  background-color: #4f7df3;
+  color: white;
+}
+
 .footer__copyright {
   display: inline-block;
   width: 100%;

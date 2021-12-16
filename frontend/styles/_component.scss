@@ -73,6 +73,11 @@ form {
             border-radius: 50%;
             border: 1px solid $color-pale-blue;
             padding: 5px;
+
+            &:hover{
+                background-color: $color-blue;
+                color: $color-light;
+            }
         }
     }
 
