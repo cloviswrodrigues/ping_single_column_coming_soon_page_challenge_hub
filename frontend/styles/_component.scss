@@ -15,6 +15,10 @@ h2 {
         color: $color-very-dark-blue;
         letter-spacing: initial;
     }
+
+    @media screen and (min-width: $break-desktop) {   
+        font-size: 2rem;
+    } 
 }
 
 p {
@@ -27,6 +31,7 @@ form {
     flex-direction: column;
 
     input {
+        width: 68%;
         border-radius: 50px;
         border: 1px solid $color-gray;
         padding: .8rem 1.2rem;
@@ -36,9 +41,14 @@ form {
             border: 1px solid $color-blue;
             outline: 0;
         }
+
+        @media screen and (min-width: $break-desktop) {   
+            margin-bottom: 0;
+        } 
     }
 
     button {
+        width: 30%;
         font-weight: 300;
         color: $color-light;
         border-radius: 50px;
@@ -51,6 +61,12 @@ form {
             background-color: lighten($color-blue, 10);
         }
     }
+
+    @media screen and (min-width: $break-desktop) {   
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    } 
 }
 
 .footer {

@@ -5,6 +5,8 @@ $color-gray: hsl(0, 0%, 59%);
 $color-very-dark-blue: hsl(209, 33%, 12%);
 $color-light: white;
 
+$break-desktop: 1000px;
+
 * {
     margin: 0;
     padding: 0;
@@ -27,6 +29,10 @@ body {
     max-width: 350px;
     height: 100vh;
     margin: 0 auto;
+
+    @media screen and (min-width: $break-desktop) {   
+        max-width: 500px;
+    }  
 }
 
 a {

@@ -23,6 +23,12 @@ body {
   margin: 0 auto;
 }
 
+@media screen and (min-width: 1000px) {
+  .wrapper {
+    max-width: 500px;
+  }
+}
+
 a {
   all: unset;
   cursor: pointer;
@@ -47,6 +53,12 @@ h2 span {
   letter-spacing: initial;
 }
 
+@media screen and (min-width: 1000px) {
+  h2 {
+    font-size: 2rem;
+  }
+}
+
 p {
   font-size: .8rem;
 }
@@ -63,6 +75,7 @@ form {
 }
 
 form input {
+  width: 68%;
   border-radius: 50px;
   border: 1px solid #969696;
   padding: .8rem 1.2rem;
@@ -74,7 +87,14 @@ form input:focus {
   outline: 0;
 }
 
+@media screen and (min-width: 1000px) {
+  form input {
+    margin-bottom: 0;
+  }
+}
+
 form button {
+  width: 30%;
   font-weight: 300;
   color: white;
   border-radius: 50px;
@@ -87,6 +107,21 @@ form button {
 
 form button:hover {
   background-color: #7ea0f6;
+}
+
+@media screen and (min-width: 1000px) {
+  form {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .footer {
