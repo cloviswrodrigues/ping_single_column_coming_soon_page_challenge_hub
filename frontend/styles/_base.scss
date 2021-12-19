@@ -14,20 +14,21 @@ $break-desktop: 1000px;
 }
 
 html {
-    font-family: Libre Franklin, sans-serif;
+    font-family: Libre Franklin, sans-serif;    
+    height: 100%;
 }
 
 body {
     background-color: $color-light;
     padding-top: 2rem;
     min-width: 100vw;
-    min-height: 100vh;
+    height: 100%;
 }
 
 .wrapper {
     position: relative;
     max-width: 350px;
-    height: 100vh;
+    height: 100%;
     margin: 0 auto;
 
     @media screen and (min-width: $break-desktop) {   
