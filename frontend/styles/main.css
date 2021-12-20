@@ -75,7 +75,7 @@ form {
           flex-direction: column;
 }
 
-form input {
+form .form__group input {
   width: 100%;
   border-radius: 50px;
   border: 1px solid #969696;
@@ -83,13 +83,30 @@ form input {
   margin-bottom: 8px;
 }
 
-form input:focus {
+form .form__group input:focus {
   border: 1px solid #4f7df3;
   outline: 0;
 }
 
+form .form__group .error-active {
+  border: 1px solid #ff333199;
+}
+
+form .form__group .form__group-msg-error {
+  display: none;
+  color: #ff333199;
+  font-size: .7rem;
+  font-weight: 600;
+  font-style: italic;
+  margin-left: 1.2rem;
+}
+
+form .form__group .error {
+  display: block;
+}
+
 @media screen and (min-width: 1000px) {
-  form input {
+  form .form__group {
     width: 68%;
     margin-bottom: 0;
   }
@@ -126,9 +143,9 @@ form button:hover {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
 }
 
@@ -188,12 +205,5 @@ h2, p {
   display: block;
   margin-top: 2rem;
   max-width: 100%;
-}
-
-.teste {
-  position: absolute;
-  bottom: 0;
-  background-color: red;
-  padding: 2rem;
 }
 /*# sourceMappingURL=main.css.map */

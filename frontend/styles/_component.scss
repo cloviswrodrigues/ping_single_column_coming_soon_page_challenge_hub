@@ -30,16 +30,36 @@ form {
     display: flex;
     flex-direction: column;
 
-    input {
-        width: 100%;
-        border-radius: 50px;
-        border: 1px solid $color-gray;
-        padding: .8rem 1.2rem;
-        margin-bottom: 8px;
+    .form__group {
+        
+        input {
+            width: 100%;
+            border-radius: 50px;
+            border: 1px solid $color-gray;
+            padding: .8rem 1.2rem;
+            margin-bottom: 8px;
+    
+            &:focus {
+                border: 1px solid $color-blue;
+                outline: 0;
+            } 
+        }
+        
+        .error-active {
+            border: 1px solid $color-error;
+        }
 
-        &:focus {
-            border: 1px solid $color-blue;
-            outline: 0;
+        .form__group-msg-error {
+            display: none;
+            color: $color-error;
+            font-size: .7rem;
+            font-weight: 600;
+            font-style: italic;
+            margin-left: 1.2rem;
+        }
+
+        .error {
+            display: block;
         }
 
         @media screen and (min-width: $break-desktop) {  
@@ -70,7 +90,7 @@ form {
     @media screen and (min-width: $break-desktop) {   
         flex-direction: row;
         justify-content: space-between;
-        align-items: center;
+        align-items: flex-start;
     } 
 }
 
@@ -119,12 +139,4 @@ h2, p {
     display: block;
     margin-top: 2rem;
     max-width: 100%;
-}
-
-
-.teste {
-    position: absolute;
-    bottom: 0;
-    background-color:red;
-    padding: 2rem;
 }
