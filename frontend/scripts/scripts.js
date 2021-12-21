@@ -2,7 +2,8 @@ const form = document.getElementById('form');
 const inputEmail = document.getElementById('js-email');
 const msgErrorEmail = document.getElementById('js-msg-error');
 
-form.addEventListener('submit', (e) => {             
+
+form.addEventListener('submit', (e) => {              
     e.preventDefault();   
     let validate = validateInputs();
     if (!validate) {

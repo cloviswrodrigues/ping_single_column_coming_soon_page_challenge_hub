@@ -78,7 +78,7 @@ form {
 form .form__group input {
   width: 100%;
   border-radius: 50px;
-  border: 1px solid #969696;
+  border: 2px solid #969696;
   padding: .8rem 1.2rem;
   margin-bottom: 8px;
 }
@@ -89,16 +89,24 @@ form .form__group input:focus {
 }
 
 form .form__group .error-active {
-  border: 1px solid #ff333199;
+  border: 1px solid #ff3431da;
 }
 
 form .form__group .form__group-msg-error {
   display: none;
-  color: #ff333199;
+  color: #ff3431da;
   font-size: .7rem;
   font-weight: 600;
   font-style: italic;
+  text-align: center;
   margin-left: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+
+@media screen and (min-width: 1000px) {
+  form .form__group .form__group-msg-error {
+    text-align: start;
+  }
 }
 
 form .form__group .error {

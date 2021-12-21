@@ -35,7 +35,7 @@ form {
         input {
             width: 100%;
             border-radius: 50px;
-            border: 1px solid $color-gray;
+            border: 2px solid $color-gray;
             padding: .8rem 1.2rem;
             margin-bottom: 8px;
     
@@ -55,7 +55,13 @@ form {
             font-size: .7rem;
             font-weight: 600;
             font-style: italic;
+            text-align: center;
             margin-left: 1.2rem;
+            margin-bottom: 1.2rem;
+
+            @media screen and (min-width: $break-desktop) {  
+                text-align: start;
+            } 
         }
 
         .error {

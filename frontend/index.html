@@ -12,7 +12,6 @@
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     
     <link rel="stylesheet" href="./styles/main.css">
-    <script src="./scripts/scripts.js"></script>
     <title>FrontEnd Mentor</title>
 </head>
 <body>
@@ -20,10 +19,10 @@
         <img src="./assets/logo.svg" alt="" class="img__logo">
         <h2>We are lauching <span>soon!</span></h2>
         <p>Subsribe and get notified</p>
-        <form id="form">
+        <form id="form" method="post">
             <div class="form__group">
-                <input type="email" id="js-email" class="error-active" name="email" placeholder="Your email adress...">
-                <span id="js-msg-error" class="form__group-msg-error error">Please provide a valid email address</span>
+                <input type="text" id="js-email" class="" name="email" placeholder="Your email adress...">
+                <span id="js-msg-error" class="form__group-msg-error">Please provide a valid email address</span>
             </div>
             <button type="submit">Notify Me</button>
         </form>
@@ -37,5 +36,6 @@
             <span class="footer__copyright">© Copyright Ping. All rights reserved.</span>
         </footer>
     </div>
+    <script src="./scripts/scripts.js"></script>
 </body>
 </html>
