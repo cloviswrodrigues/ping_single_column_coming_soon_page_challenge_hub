@@ -22,7 +22,14 @@
         <form id="form" method="post">
             <div class="form__group">
                 <input type="text" id="js-email" class="" name="email" placeholder="Your email adress...">
-                <span id="js-msg-error" class="form__group-msg-error">Please provide a valid email address</span>
+                <span id="js-msg-error" class="form__group-msg msg-error">
+                    Please provide a valid email address
+                    <ion-icon class="msg-icon" name="close-circle-outline"></ion-icon>
+                </span>
+                <span id="js-msg-sucess" class="form__group-msg msg-sucess">
+                    Successful registration!
+                    <ion-icon class="msg-icon" name="checkmark-circle-outline"></ion-icon>
+                </span>
             </div>
             <button type="submit">Notify Me</button>
         </form>

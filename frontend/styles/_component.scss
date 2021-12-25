@@ -49,23 +49,42 @@ form {
             border: 1px solid $color-error;
         }
 
-        .form__group-msg-error {
+        .sucess-active {
+            border: 1px solid $color-sucess;
+        }
+
+        .form__group-msg {
             display: none;
-            color: $color-error;
             font-size: .7rem;
             font-weight: 600;
             font-style: italic;
             text-align: center;
             margin-left: 1.2rem;
             margin-bottom: 1.2rem;
+            justify-content: center;
+            align-items: center;
 
             @media screen and (min-width: $break-desktop) {  
-                text-align: start;
-            } 
+                justify-content: start;
+            }          
+            
+            .msg-icon {
+                width: 20px;
+                height: 20px;
+                margin-left: .5rem
+            }
         }
 
-        .error {
-            display: block;
+        .msg-error {
+            color: $color-error;
+        }
+
+        .msg-sucess {
+            color: $color-sucess;
+        }
+
+        .show {
+            display: flex;
         }
 
         @media screen and (min-width: $break-desktop) {  

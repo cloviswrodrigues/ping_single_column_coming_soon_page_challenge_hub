@@ -1,26 +1,29 @@
 const form = document.getElementById('form');
 const inputEmail = document.getElementById('js-email');
 const msgErrorEmail = document.getElementById('js-msg-error');
+const msgSucessEmail = document.getElementById('js-msg-sucess');
 
 
 form.addEventListener('submit', (e) => {              
     e.preventDefault();   
     let validate = validateInputs();
     if (!validate) {
-        document.location.reload();
+        setTimeout(() => {
+            document.location.reload();
+        }, 3000);
     }
 })
 
 form.addEventListener('focusin', (e) => {
-    activeErrorInputEmail(false);
+    activeErrorInputEmail();
 });
 
 function validateInputs() {
    if (!isValidEmail(inputEmail.value)){
-        activeErrorInputEmail(true);
+        activeErrorInputEmail('error');
         return true;
     }else{
-        activeErrorInputEmail(false);
+        activeErrorInputEmail('sucess');
         return false;
     }
 }
@@ -30,12 +33,21 @@ function isValidEmail(email){
     return regex.exec(email) == null ? false : true;
 }
 
-function activeErrorInputEmail(active) {
-    if (active){
+function activeErrorInputEmail(option) {
+    if (option == 'error'){
         inputEmail.classList.add('error-active');
-        msgErrorEmail.classList.add('error');
+        msgErrorEmail.classList.add('show');
+        inputEmail.classList.remove('sucess-active');
+        msgSucessEmail.classList.remove('show');
+    }else if (option == 'sucess') {
+        inputEmail.classList.remove('error-active');
+        msgErrorEmail.classList.remove('show');
+        msgSucessEmail.classList.add('show');
+        inputEmail.classList.remove('sucess-active');
     }else {
         inputEmail.classList.remove('error-active');
-        msgErrorEmail.classList.remove('error');
+        inputEmail.classList.remove('sucess-active');
+        msgErrorEmail.classList.remove('show');
+        msgSucessEmail.classList.remove('show');
     }
 }
