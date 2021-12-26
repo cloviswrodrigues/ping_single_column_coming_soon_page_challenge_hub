@@ -4,6 +4,12 @@ const msgErrorEmail = document.getElementById('js-msg-error');
 const msgSucessEmail = document.getElementById('js-msg-sucess');
 
 
+const validation = {
+    error: 'error',
+    sucess: 'sucess'
+}
+
+
 form.addEventListener('submit', (e) => {              
     e.preventDefault();   
     let validate = validateInputs();
@@ -15,15 +21,17 @@ form.addEventListener('submit', (e) => {
 })
 
 form.addEventListener('focusin', (e) => {
-    activeErrorInputEmail();
+    if (inputEmail.classList.contains('error-active'))  {
+        activeErrorInputEmail();
+    }
 });
 
 function validateInputs() {
    if (!isValidEmail(inputEmail.value)){
-        activeErrorInputEmail('error');
+        activeErrorInputEmail(validation.error);
         return true;
     }else{
-        activeErrorInputEmail('sucess');
+        activeErrorInputEmail(validation.sucess);
         return false;
     }
 }
@@ -34,12 +42,12 @@ function isValidEmail(email){
 }
 
 function activeErrorInputEmail(option) {
-    if (option == 'error'){
+    if (option == validation.error){
         inputEmail.classList.add('error-active');
         msgErrorEmail.classList.add('show');
         inputEmail.classList.remove('sucess-active');
         msgSucessEmail.classList.remove('show');
-    }else if (option == 'sucess') {
+    }else if (option == validation.sucess) {
         inputEmail.classList.remove('error-active');
         msgErrorEmail.classList.remove('show');
         msgSucessEmail.classList.add('show');

@@ -84,7 +84,7 @@ form .form__group input {
 }
 
 form .form__group input:focus {
-  border: 1px solid #4f7df3;
+  border: 2px solid #4f7df3;
   outline: 0;
 }
 
@@ -143,6 +143,7 @@ form .form__group .show {
 @media screen and (min-width: 1000px) {
   form .form__group {
     width: 68%;
+    height: 90px;
     margin-bottom: 0;
   }
 }

@@ -31,7 +31,7 @@ form {
     flex-direction: column;
 
     .form__group {
-        
+
         input {
             width: 100%;
             border-radius: 50px;
@@ -40,7 +40,7 @@ form {
             margin-bottom: 8px;
     
             &:focus {
-                border: 1px solid $color-blue;
+                border: 2px solid $color-blue;
                 outline: 0;
             } 
         }
@@ -89,6 +89,7 @@ form {
 
         @media screen and (min-width: $break-desktop) {  
             width: 68%;
+            height: 90px;
             margin-bottom: 0;
         } 
     }
