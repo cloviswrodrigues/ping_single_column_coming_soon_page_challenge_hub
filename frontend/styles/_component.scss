@@ -165,4 +165,8 @@ h2, p {
     display: block;
     margin-top: 2rem;
     max-width: 100%;
+
+    @media screen and (min-width: $break-desktop) {   
+        margin-top: 0;
+    } 
 }
